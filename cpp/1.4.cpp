@@ -21,7 +21,9 @@ int main() {
         cout << "Нет решений";
     } else
       cout << "x = " << -c / b;
-  } else {
+  } else if (c == 0)
+    cout << "x = 0"; //-0
+  else {
     d = b * b - 4 * a * c;
     if (d < 0)
       cout << "Нет решений";

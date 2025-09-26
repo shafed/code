@@ -17,7 +17,9 @@ int main() {
       cout << "Бесконечно много решений";
     else
       cout << "Нет решений";
-  } else
+  } else if (c == 0)
+    cout << "x = 0"; //-0
+  else
     cout << "x = " << -c / b;
 
   return 0;
