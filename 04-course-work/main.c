@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 void printArray(int arr[], int n) { // Функция для вывода массивов
   // Выводим 10 элементов из начала
@@ -63,7 +64,12 @@ int main() {
     printf("\nМассив размера %i до сортировки:\n", n);
     printArray(arr, n); // Выводим до сортировки
 
+    clock_t start = clock();
     bubbleSort(arr, n); // Сортируем
+    clock_t end = clock();
+
+    double elapsed_ms = (double)(end - start) / CLOCKS_PER_SEC * 1000.0;
+    printf("\nВремя сортировки массива размера %d: %.2f мс\n", n, elapsed_ms);
 
     printf("\nМассив размера %i после сортировки:\n", n);
     printArray(arr, n); // Выводим после сортировки
