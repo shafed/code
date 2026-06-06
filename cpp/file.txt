@@ -1,3 +1,0 @@
-Hello, world!
-This is myi first file.
-C++ will nowread and print it.
