@@ -1,0 +1,55 @@
+% --- Данные титульного блока; вёрстку выполняет \maketitle ---
+% (переопределение \@maketitle — в inc/preamble.tex)
+
+\udk{XXX.XX}
+
+\title{СРАВНИТЕЛЬНЫЙ АНАЛИЗ ЛИНЕЙНОЙ (LSA) И НЕЛИНЕЙНОЙ
+(ALL-MINILM-L6-V2) МОДЕЛЕЙ ВЕКТОРНОГО ПРЕДСТАВЛЕНИЯ ТЕКСТА}
+\author{\textsuperscript{1}Шапаренко Ф.\,А.}
+\affiliation{\textsuperscript{1}МИРЭА~--- Российский технологический
+университет, Москва}
+\email{shaparenko.fedor@gmail.com}
+
+\abstractru{В работе проводится сравнительный анализ двух подходов к
+  векторному представлению текста: линейной модели на основе
+  латентно-семантического анализа (LSA) и нелинейной модели-трансформера
+  \texttt{all-MiniLM-L6-v2}. Цель~--- выявить связь между алгебраическими
+  свойствами векторных пространств моделей и качеством их работы на
+  прикладных задачах. Сравнение проведено на датасетах STS Benchmark, 20
+  Newsgroups и MRPC с использованием интринсивных (participation ratio,
+  effective rank, isotropy score, hubness score) и экстринсивных (корреляция
+  Спирмена, Accuracy, F1-macro, ARI, silhouette) метрик. Показано, что
+  нелинейная модель существенно превосходит LSA в задачах, требующих учёта
+  контекста (семантическое сходство и кластеризация), тогда как на задачах,
+  опирающихся на совпадение ключевых слов (тематическая классификация и
+  обнаружение парафраз), модели сопоставимы. Установлено, что высокие
+  значения геометрических характеристик пространства (PR, ER, изотропия) не
+являются достаточным условием семантического качества представлений.}
+\keywordsru{латентно-семантический анализ, векторное представление текста,
+  эмбеддинги, трансформеры, all-MiniLM-L6-v2, сингулярное разложение,
+семантическое сходство, изотропия пространства, кластеризация текстов.}
+
+\titleen{COMPARATIVE ANALYSIS OF LINEAR (LSA) AND NONLINEAR
+(ALL-MINILM-L6-V2) TEXT VECTOR REPRESENTATION MODELS}
+\authoren{\textsuperscript{1}Shaparenko F.\,A.}
+\affiliationen{\textsuperscript{1}MIREA~--- Russian Technological University,
+Moscow}
+\abstracten{This paper presents a comparative analysis of two approaches to
+  text vector representation: a linear model based on latent semantic analysis
+  (LSA) and the nonlinear transformer model \texttt{all-MiniLM-L6-v2}. The aim
+  is to reveal the relationship between the algebraic properties of the
+  models' vector spaces and their performance on applied tasks. The comparison
+  is carried out on the STS Benchmark, 20 Newsgroups, and MRPC datasets using
+  intrinsic (participation ratio, effective rank, isotropy score, hubness
+  score) and extrinsic (Spearman correlation, Accuracy, F1-macro, ARI,
+  silhouette) metrics. The results show that the nonlinear model substantially
+  outperforms LSA on context-dependent tasks (semantic similarity and
+  clustering), whereas on tasks driven by keyword overlap (topic
+  classification and paraphrase detection) the models are comparable. High
+  values of geometric space characteristics (PR, ER, isotropy) are shown to be
+insufficient as a condition for the semantic quality of representations.}
+\keywordsen{latent semantic analysis, text vector representation, embeddings,
+  transformers, all-MiniLM-L6-v2, singular value decomposition, semantic
+similarity, space isotropy, text clustering.}
+
+\maketitle
